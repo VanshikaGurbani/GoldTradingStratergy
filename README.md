@@ -49,6 +49,24 @@ This project explores and evaluates three trading strategies for gold using Pytr
 
 ---
 
+## **Google Trends vs. Gold ETF Correlation**
+
+`correlation/correlation_stats.py` measures how GLD (gold ETF) prices relate to Google Trends search interest, using the monthly datasets saved in `correlation/` (48 months, Feb 2018 to Dec 2023). Run it with `python correlation/correlation_stats.py`; output is saved to `correlation/correlation_results.txt`.
+
+| **Measure**                                   | **gold_etf_trends_data.csv** | **gold_etf_trends_detailed_data.csv** |
+|-----------------------------------------------|------------------------------|---------------------------------------|
+| Pearson r, price vs. search interest          | 0.79 (p < 0.001)             | 0.46 (p = 0.001)                      |
+| Spearman rho, price vs. search interest       | 0.75                         | 0.61                                  |
+| r, price return vs. change in interest        | 0.13 (p = 0.40)              | -0.04 (p = 0.79)                      |
+| r, interest vs. next-period return            | -0.09 (p = 0.55)             | 0.24 (p = 0.10)                       |
+
+**Takeaways**
+- Gold ETF price levels and search interest moved together over the period, but part of this is shared trend rather than a causal link.
+- Search interest showed no statistically significant relationship with returns, which is consistent with the Trends-driven strategies trailing Buy & Hold.
+- The two files contain different Google Trends pulls (Trends rescales data on each request), so their coefficients differ. Report them separately.
+
+---
+
 ## **How to Use**
 
 1. **Data Preparation**:

@@ -1,0 +1,13 @@
+=== gold_etf_trends_data.csv: n=48, 2018-02-01 to 2023-12-01
+Search interest: mean 76.9, min 59, max 100
+Pearson  (price vs interest):                  r=0.7885   p=2.851e-11
+Spearman (price vs interest):                  rho=0.7518 p=7.33e-10
+Pearson  (price return vs change in interest): r=0.1253   p=0.4014  n=47
+Pearson  (interest vs next-period return):     r=-0.0902   p=0.5465  n=47
+
+=== gold_etf_trends_detailed_data.csv: n=48, 2018-02-01 to 2023-12-01
+Search interest: mean 32.4, min 11, max 98
+Pearson  (price vs interest):                  r=0.4570   p=0.001093
+Spearman (price vs interest):                  rho=0.6125 p=3.714e-06
+Pearson  (price return vs change in interest): r=-0.0404   p=0.7874  n=47
+Pearson  (interest vs next-period return):     r=0.2420   p=0.1013  n=47
